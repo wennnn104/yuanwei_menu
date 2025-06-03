@@ -6,8 +6,10 @@
     <title>元味食品穀物粉 價目表</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Updated Font Awesome CDN to a more recent version (6.5.2) for better icon support -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        /* Reverted to original color palette */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #fdfaf6; /* 淺米色背景 */
@@ -15,12 +17,12 @@
         }
         .container {
             max-width: 960px; /* 限制內容寬度 */
+            border-color: #c6f6d5; /* 淺綠色邊框 (Tailwind green-200) */
         }
         .category-title {
             background-color: #e6f2e6; /* 淺綠色背景 */
             color: #2e8b57; /* 深綠色文字 */
             border-left: 8px solid #4CAF50; /* 左側綠色邊框 */
-            /* 移除 shadow-md 樣式 */
         }
         .item-row:nth-child(odd) {
             background-color: #ffffff; /* 白色背景 */
@@ -101,7 +103,7 @@
 
         <section class="mb-8 sm:mb-10">
             <h3 class="category-title text-2xl-responsive sm:text-3xl font-bold py-4 px-6 mb-6 rounded-xl flex items-center">
-                <i class="fas fa-seedling mr-4 text-yellow-700"></i> 堅果種籽系列
+                <i class="fas fa-seedling mr-4 text-yellow-700"></i> 堅果種籽系列 (粉類)
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
@@ -115,6 +117,37 @@
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
                     <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">黑芝麻粉</p>
                     <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">180 元/斤</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8 sm:mb-10">
+            <h3 class="category-title text-2xl-responsive sm:text-3xl font-bold py-4 px-6 mb-6 rounded-xl flex items-center">
+                <i class="fas fa-cookie-bite mr-4 text-yellow-600"></i> 堅果點心系列
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <div>
+                        <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800 mb-1">綜合堅果</p>
+                        <p class="text-lg-responsive sm:text-lg text-gray-600 leading-snug">(核桃、腰果、杏仁果、南瓜籽、夏威夷豆)</p>
+                    </div>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">160 元/包</span>
+                </div>
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">核桃</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">150 元/包</span>
+                </div>
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">腰果</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">200 元/包</span>
+                </div>
+		<div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">杏仁果</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">200 元/包</span>
+                </div>
+		<div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">南瓜籽</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">150 元/包</span>
                 </div>
             </div>
         </section>
@@ -144,7 +177,7 @@
 
         <section class="mb-8 sm:mb-10">
             <h3 class="category-title text-2xl-responsive sm:text-3xl font-bold py-4 px-6 mb-6 rounded-xl flex items-center">
-                <i class="fas fa-seedling mr-4 text-blue-600"></i> 優質豆類系列
+                <i class="fas fa-seedling mr-4 text-black-600"></i> 優質豆類系列
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
@@ -157,7 +190,7 @@
                 </div>
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
                     <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">黃豆粉<br>(非基改)</p>
-                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">160 元/斤</span>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">220 元/斤</span>
                 </div>
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
                     <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">綠豆粉</p>
@@ -168,7 +201,7 @@
 
         <section class="mb-8 sm:mb-10">
             <h3 class="category-title text-2xl-responsive sm:text-3xl font-bold py-4 px-6 mb-6 rounded-xl flex items-center">
-                <i class="fas fa-seedling mr-4 text-yellow-600"></i> 純粹穀物系列
+                <i class="fas fa-wheat-awn mr-4 text-yellow-600"></i> 純粹穀物系列 (粉類)
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
@@ -187,10 +220,29 @@
                     <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">燕麥粉</p>
                     <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">160 元/斤</span>
                 </div>
-		<div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
                     <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">核桐麥粉<br>(洋薏仁)</p>
                     <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">180 元/斤</span>
                 </div>
+            </div>
+        </section>
+
+        <section class="mb-8 sm:mb-10">
+            <h3 class="category-title text-2xl-responsive sm:text-3xl font-bold py-4 px-6 mb-6 rounded-xl flex items-center">
+                <i class="fas fa-bowl-food mr-4 text-orange-600"></i> 即食燕麥系列
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">燕麥片（大包）</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">90 元/包</span>
+                </div>
+                <div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">燕麥片（小包）</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">60 元/包</span>
+                </div>
+ 		<div class="item-row p-5 rounded-xl border border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                    <p class="text-2xl-responsive sm:text-2xl font-semibold text-gray-800">奇亞籽</p>
+                    <span class="price-tag text-2xl-responsive sm:text-2xl font-bold px-4 py-2 rounded-full mt-3 sm:mt-0 sm:ml-4 whitespace-nowrap">150 元/包</span>
                 </div>
             </div>
         </section>
